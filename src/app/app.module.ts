@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 // RUTAS
 import { APP_ROUTING } from './app.routes';
 // SERVICIOS
-import { HeroesService } from './servicios/herores.service';
+import { HeroesService } from './servicios/heroes.service';
 // COMPONENTES
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { RouterModule } from '@angular/router';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,

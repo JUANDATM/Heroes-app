@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroesService, Heroe } from '../../servicios/herores.service';
+import { HeroesService, Heroe } from '../../servicios/heroes.service';
 import { Router } from '@angular/router';
 
 @Component({
