@@ -14,7 +14,13 @@ export class NavbarComponent implements OnInit {
 
   buscarHeroe( termino:string ){
     // console.log(termino);
-    this.router.navigate( ['/buscar',termino] );
+    this.router.navigate( ['/buscar', termino] );
+  }
+
+  onKeydown( event, buscarTexto) {
+    if (event.key === 'Enter' ) {
+      this.buscarHeroe(buscarTexto);
+    }
   }
 
 }
